@@ -1,4 +1,4 @@
-package com.laba.solvd.db.model;
+package com.solvd.laba.model;
 
 import java.util.Objects;
 
