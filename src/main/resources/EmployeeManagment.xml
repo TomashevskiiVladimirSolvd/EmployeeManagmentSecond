@@ -11,31 +11,31 @@
         <name>Data Collectio</name>
     </projects>
 
-    <table name="tasks">
+    <tasks>
         <column name="id" type="INT" nullable="false" autoIncrement="true" />
         <column name="name" type="VARCHAR(45)" nullable="false" />
         <column name="priority" type="VARCHAR(45)" nullable="false" />
         <column name="project_id" type="INT" nullable="false" />
-    </table>
+    </tasks>
 
-    <table name="contacts">
+    <contacts>
         <column name="id" type="INT" nullable="false" autoIncrement="true" />
         <column name="email" type="VARCHAR(45)" nullable="false" />
         <column name="phone" type="VARCHAR(45)" nullable="false" />
         <column name="employee_id" type="INT" nullable="false" />
-    </table>
+    </contacts>
 
-    <table name="employees_tasks">
+    <employees_tasks>
         <column name="id" type="INT" nullable="false" autoIncrement="true" />
         <column name="employee_id" type="INT" nullable="false" />
         <column name="task_id" type="INT" nullable="false" />
         <column name="percentage_completed" type="INT" nullable="false" />
-    </table>
+    </employees_tasks>
 
-    <table name="credentials">
+    <credentials>
         <column name="id" type="INT" nullable="false" autoIncrement="true" />
         <column name="employee_id" type="INT" nullable="false" />
         <column name="login" type="VARCHAR(45)" nullable="false" />
         <column name="password" type="VARCHAR(45)" nullable="false" />
-    </table>
+    </credentials>
 </database>
