@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.solvd.laba.db.mapper.EmployeeMapper">
+
+    <select id="selectEmployeeById" resultType="om.solvd.laba.model.Employee">
+        SELECT * FROM Employees WHERE id = #{id}
+    </select>
+
+    <insert id="insert" parameterType="com.example.model.YourModel">
+        INSERT INTO your_table (column1, column2) VALUES (#{property1}, #{property2})
+    </insert>
+
+    <update id="update" parameterType="com.example.model.YourModel">
+        UPDATE your_table SET column1 = #{property1}, column2 = #{property2} WHERE id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="int">
+        DELETE FROM your_table WHERE id = #{id}
+    </delete>
+
+</mapper>
