@@ -2,40 +2,44 @@
 <database>
     <employees>
         <id>1</id>
-        <name>Bill Murrey</name>
+        <name>Bill Murray</name>
         <position>Manager</position>
+        <credential_id>1</credential_id>
+        <contact_id>1</contact_id>
     </employees>
+
+    <credentials>
+        <id>1</id>
+        <employee_id>1</employee_id>
+        <login>username</login>
+        <password>password</password>
+    </credentials>
+
+    <contacts>
+        <id>1</id>
+        <employee_id>1</employee_id>
+        <email>example@example.com</email>
+        <phone>1234567890</phone>
+    </contacts>
 
     <projects>
         <id>1</id>
-        <name>Data Collectio</name>
+        <name>Data Collection</name>
     </projects>
 
     <tasks>
         <id>1</id>
-        <name></name>
-        <priority></priority>
-        <project_id></project_id>
+        <name>Task 1</name>
+        <priority>High</priority>
+        <project_id>1</project_id>
     </tasks>
-
-    <contacts>
-        <id>1</id>
-        <email></email>
-        <phone></phone>
-        <employee_id></employee_id>
-    </contacts>
 
     <employees_tasks>
         <id>1</id>
-        <employee_id></employee_id>
-        <task_id></task_id>
-        <percentage_completed></percentage_completed>
+        <employee_id>1</employee_id>
+        <task_id>1</task_id>
+        <percentage_completed>50</percentage_completed>
     </employees_tasks>
 
-    <credentials>
-        <id>1</id>
-        <employee_id></employee_id>
-        <login></login>
-        <password></password>
-    </credentials>
 </database>
+
