@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-    <!-- Define element types -->
     <xs:element name="database" type="DatabaseType"/>
 
     <xs:element name="employees" type="EmployeeType"/>
@@ -11,7 +10,6 @@
     <xs:element name="tasks" type="TaskType"/>
     <xs:element name="employees_tasks" type="EmployeeTaskType"/>
 
-    <!-- Define complex types -->
     <xs:complexType name="DatabaseType">
         <xs:sequence>
             <xs:element ref="employees"/>

@@ -4,7 +4,6 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 
-import com.solvd.laba.model.Employee;
 import org.xml.sax.SAXException;
 
 import java.io.File;
