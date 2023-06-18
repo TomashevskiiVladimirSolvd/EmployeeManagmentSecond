@@ -1,45 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<database>
-    <employees>
+<EmployeeManagement>
+    <department>
+        <id>1</id>
+        <name>Department 1</name>
+    </department>
+
+    <employee>
         <id>1</id>
         <name>Bill Murray</name>
         <position>Manager</position>
-        <credential_id>1</credential_id>
-        <contact_id>1</contact_id>
-    </employees>
+        <department_id>1</department_id>
+    </employee>
 
-    <credentials>
-        <id>1</id>
-        <employee_id>1</employee_id>
-        <login>username</login>
-        <password>password</password>
-    </credentials>
+    <employee>
+        <id>2</id>
+        <name>John Doe</name>
+        <position>Developer</position>
+        <department_id>1</department_id>
+    </employee>
 
-    <contacts>
+    <contact>
         <id>1</id>
-        <employee_id>1</employee_id>
         <email>example@example.com</email>
         <phone>1234567890</phone>
-    </contacts>
+        <employee_id>1</employee_id>
+    </contact>
 
-    <projects>
+    <contact>
+        <id>2</id>
+        <email>john@example.com</email>
+        <phone>9876543210</phone>
+        <employee_id>2</employee_id>
+    </contact>
+
+    <credential>
         <id>1</id>
-        <name>Data Collection</name>
-    </projects>
+        <login>username</login>
+        <password>password</password>
+        <employee_id>1</employee_id>
+    </credential>
 
-    <tasks>
+    <credential>
+        <id>2</id>
+        <login>john_username</login>
+        <password>john_password</password>
+        <employee_id>2</employee_id>
+    </credential>
+
+    <task>
         <id>1</id>
         <name>Task 1</name>
         <priority>High</priority>
-        <project_id>1</project_id>
-    </tasks>
-
-    <employees_tasks>
-        <id>1</id>
         <employee_id>1</employee_id>
-        <task_id>1</task_id>
-        <percentage_completed>50</percentage_completed>
-    </employees_tasks>
+    </task>
 
-</database>
+    <task>
+        <id>2</id>
+        <name>Task 2</name>
+        <priority>Medium</priority>
+        <employee_id>1</employee_id>
+    </task>
 
+    <task>
+        <id>3</id>
+        <name>Task 3</name>
+        <priority>Low</priority>
+        <employee_id>2</employee_id>
+    </task>
+
+    <task>
+        <id>4</id>
+        <name>Task 4</name>
+        <priority>Medium</priority>
+        <employee_id>2</employee_id>
+    </task>
+</EmployeeManagement>
