@@ -3,7 +3,7 @@ package com.solvd.laba.model;
 import java.util.Objects;
 
 public class Contact {
-    private long id;
+    private Long id;
     private String email;
     private String phone;
 
@@ -12,17 +12,17 @@ public class Contact {
 
     ;
 
-    public Contact(long id, String email, String phone) {
+    public Contact(Long id, String email, String phone) {
         this.id = id;
         this.email = email;
         this.phone = phone;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

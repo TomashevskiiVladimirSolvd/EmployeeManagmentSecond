@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Objects;
 
 public class Employee {
-    private long id;
+    private Long id;
     private String name;
     private String position;
     private Contact contact;
@@ -18,7 +18,7 @@ public class Employee {
 
     ;
 
-    public Employee(long id, String name, String position, Contact contact, Credential credential, List<EmployeeSkill> skills,
+    public Employee(Long id, String name, String position, Contact contact, Credential credential, List<EmployeeSkill> skills,
                     List<EmployeeTask> tasks, List<EmployeeTraining> trainings) {
         this.id = id;
         this.name = name;
@@ -69,11 +69,11 @@ public class Employee {
         this.contact = contact;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

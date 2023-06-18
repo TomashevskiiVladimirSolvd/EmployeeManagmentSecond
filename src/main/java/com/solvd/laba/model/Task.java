@@ -7,18 +7,16 @@ public class Task {
     private long id;
     private String name;
     private String priority;
-    private List<EmployeeTask> employees;
 
     public Task() {
     }
 
     ;
 
-    public Task(long id, String name, String priority, List<EmployeeTask> employees) {
+    public Task(long id, String name, String priority) {
         this.id = id;
         this.name = name;
         this.priority = priority;
-        this.employees = employees;
     }
 
     public long getId() {
@@ -45,24 +43,16 @@ public class Task {
         this.priority = priority;
     }
 
-    public List<EmployeeTask> getEmployees() {
-        return employees;
-    }
-
-    public void setEmployees(List<EmployeeTask> employees) {
-        this.employees = employees;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Task task = (Task) o;
-        return id == task.id && Objects.equals(name, task.name) && Objects.equals(priority, task.priority) && Objects.equals(employees, task.employees);
+        return id == task.id && Objects.equals(name, task.name) && Objects.equals(priority, task.priority);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, priority, employees);
+        return Objects.hash(id, name, priority);
     }
 }

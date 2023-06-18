@@ -3,7 +3,7 @@ package com.solvd.laba.model;
 import java.util.Objects;
 
 public class Credential {
-    private long id;
+    private Long id;
     private String login;
     private String password;
 
@@ -12,17 +12,17 @@ public class Credential {
 
     ;
 
-    public Credential(long id, String login, String password) {
+    public Credential(Long id, String login, String password) {
         this.id = id;
         this.login = login;
         this.password = password;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

@@ -1,10 +1,11 @@
 package com.solvd.laba.model;
 
 import java.util.List;
+
 import java.util.Objects;
 
 public class Department {
-    private long id;
+    private Long id;
     private String name;
     List<Employee> employees;
 
@@ -13,17 +14,24 @@ public class Department {
 
     ;
 
-    public Department(long id, String name, List<Employee> employees) {
+    public Department(Long id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    public List<Employee> getEmployees() {
+        return employees;
+    }
+
+    public void setEmployees(List<Employee> employees) {
         this.employees = employees;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -40,11 +48,11 @@ public class Department {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Department that = (Department) o;
-        return id == that.id && Objects.equals(name, that.name);
+        return id == that.id && Objects.equals(name, that.name) && Objects.equals(employees, that.employees);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name);
+        return Objects.hash(id, name, employees);
     }
 }

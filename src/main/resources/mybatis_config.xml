@@ -6,12 +6,12 @@
 <configuration>
     <environments default="development">
         <environment id="development">
-            <transactionManager type="JDBC" />
+            <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
-                <property name="driver" value="com.mysql.jdbc.Driver" />
-                <property name="url" value="jdbc:mysql://localhost:3306/EmployeeManagment" />
-                <property name="username" value="root" />
-                <property name="password" value="01101992Vv.." />
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/EmployeeManagment"/>
+                <property name="username" value="root"/>
+                <property name="password" value="01101992Vv.."/>
             </dataSource>
         </environment>
     </environments>
