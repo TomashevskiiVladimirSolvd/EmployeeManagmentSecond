@@ -62,6 +62,12 @@
       <artifactId>mybatis</artifactId>
       <version>3.5.13</version>
     </dependency>
+    <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-ri</artifactId>
+      <version>2.3.1</version>
+    </dependency>
+
 
   </dependencies>
   <build>

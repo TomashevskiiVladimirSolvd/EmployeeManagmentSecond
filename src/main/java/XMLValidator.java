@@ -15,10 +15,10 @@ public class XMLValidator {
         try {
             SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
             Schema schema = schemaFactory.newSchema(new File(xsdFilePath));
-            JAXBContext jaxbContext = JAXBContext.newInstance(DatabaseType.class);
+            JAXBContext jaxbContext = JAXBContext.newInstance(EmployeeManagementType.class);
             Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
             unmarshaller.setSchema(schema);
-            DatabaseType database = (DatabaseType) unmarshaller.unmarshal(new File(xmlFilePath));
+            EmployeeManagementType employeeManagementType = (EmployeeManagementType) unmarshaller.unmarshal(new File(xmlFilePath));
             System.out.println("XML is valid.");
         } catch (SAXException e) {
             System.out.println("XML is invalid. Reason: " + e.getMessage());

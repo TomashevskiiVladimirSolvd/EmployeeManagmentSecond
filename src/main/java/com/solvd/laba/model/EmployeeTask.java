@@ -5,6 +5,7 @@ import java.util.Objects;
 public class EmployeeTask {
     private long id;
     private int percentageCompleted;
+    private Task task;
 
     public EmployeeTask() {
     }
@@ -32,16 +33,24 @@ public class EmployeeTask {
         this.percentageCompleted = percentageCompleted;
     }
 
+    public Task getTask() {
+        return task;
+    }
+
+    public void setTask(Task task) {
+        this.task = task;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         EmployeeTask that = (EmployeeTask) o;
-        return id == that.id && percentageCompleted == that.percentageCompleted;
+        return id == that.id && percentageCompleted == that.percentageCompleted && Objects.equals(task, that.task);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, percentageCompleted);
+        return Objects.hash(id, percentageCompleted, task);
     }
 }

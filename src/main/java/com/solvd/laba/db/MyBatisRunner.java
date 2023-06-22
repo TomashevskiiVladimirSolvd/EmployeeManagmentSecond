@@ -18,7 +18,6 @@ public class MyBatisRunner {
 
             Employee employee = session.selectOne("com.solvd.laba.db.mapper.EmployeeMapper.selectEmployeeById", 2);
 
-
             System.out.println(employee);
 
             session.close();
