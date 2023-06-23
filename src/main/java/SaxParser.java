@@ -13,7 +13,7 @@ public class SaxParser {
             XMLHandler handler = new XMLHandler();
             parser.parse(xmlFile, handler);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Can't parse it");
         }
     }
 }

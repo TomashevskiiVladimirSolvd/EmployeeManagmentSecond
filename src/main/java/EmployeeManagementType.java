@@ -1,4 +1,5 @@
 import com.solvd.laba.model.*;
+
 import javax.xml.bind.annotation.*;
 import java.util.List;
 
