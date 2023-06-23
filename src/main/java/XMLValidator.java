@@ -33,7 +33,7 @@ public class XMLValidator {
     }
 
     public static void main(String[] args) {
-        String xmlFilePath = "src/main/resources/EmployeeManagement.xml";
+        String xmlFilePath = "src/main/resources/EmployeeManagment.xml";
         String xsdFilePath = "src/main/resources/EmployeeManagmentSchema.xsd";
         boolean isValid = validateXMLAgainstXSD(xmlFilePath, xsdFilePath);
         System.out.println("XML is valid: " + isValid);
