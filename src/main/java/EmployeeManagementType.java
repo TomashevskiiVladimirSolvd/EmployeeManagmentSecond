@@ -9,7 +9,7 @@ public class EmployeeManagementType {
     @XmlElement(name = "department")
     private Department department;
 
-    @XmlElementWrapper(name = "employee")
+    @XmlElementWrapper(name = "employees")
     @XmlElement(name = "employee")
     private List<Employee> employees;
 
@@ -21,9 +21,9 @@ public class EmployeeManagementType {
     @XmlElement(name = "credential")
     private List<Credential> credentials;
 
-    @XmlElementWrapper(name = "task")
+    @XmlElementWrapper(name = "tasks")
     @XmlElement(name = "task")
     private List<Task> tasks;
-
 }
+
 
