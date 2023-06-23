@@ -1,16 +1,21 @@
 package com.solvd.laba.model;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementWrapper;
+
+import javax.xml.bind.annotation.*;
 import java.util.List;
 import java.util.Objects;
 
+@XmlRootElement(name = "department")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Department {
-
+    @XmlElement
     private Long id;
+
+    @XmlElement
     private String name;
+
+    @XmlElementWrapper(name = "employees")
+    @XmlElement(name = "employee")
     private List<Employee> employees;
 
     public Department() {

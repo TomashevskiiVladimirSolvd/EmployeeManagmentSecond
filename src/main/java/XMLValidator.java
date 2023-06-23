@@ -18,7 +18,6 @@ public class XMLValidator {
             validator.validate(new StreamSource(new File(xmlFilePath)));
         } catch (SAXException | IOException e) {
             System.out.println("Exception" + e.getMessage());
-            ;
             return false;
         }
         return true;

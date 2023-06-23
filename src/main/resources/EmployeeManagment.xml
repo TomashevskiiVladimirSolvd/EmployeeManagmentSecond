@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<EmployeeManagement>
     <department>
         <id>1</id>
         <name>Department 1</name>
@@ -36,4 +35,3 @@
             </employee>
         </employees>
     </department>
-</EmployeeManagement>

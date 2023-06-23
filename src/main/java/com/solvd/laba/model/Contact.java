@@ -1,10 +1,19 @@
 package com.solvd.laba.model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import java.util.Objects;
 
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Contact {
+    @XmlElement
     private Long id;
+
+    @XmlElement
     private String email;
+
+    @XmlElement
     private String phone;
 
     public Contact() {

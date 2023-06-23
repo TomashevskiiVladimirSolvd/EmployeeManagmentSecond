@@ -2,14 +2,25 @@ package com.solvd.laba.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import java.util.List;
 import java.util.Objects;
 
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Employee {
+    @XmlElement
     private Long id;
+
+    @XmlElement
     private String name;
+
+    @XmlElement
     private String position;
+
+    @XmlElement
     private Contact contact;
+
+    @XmlElement
     private Credential credential;
     private List<EmployeeSkill> skills;
     private List<EmployeeTask> tasks;
@@ -55,11 +66,11 @@ public class Employee {
         this.skills = skills;
     }
 
-    public Credential getCredentials() {
+    public Credential getCredential() {
         return credential;
     }
 
-    public void setCredentials(Credential credential) {
+    public void setCredential(Credential credential) {
         this.credential = credential;
     }
 

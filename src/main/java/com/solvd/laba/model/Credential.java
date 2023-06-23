@@ -1,10 +1,19 @@
 package com.solvd.laba.model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import java.util.Objects;
 
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Credential {
+    @XmlElement
     private Long id;
+
+    @XmlElement
     private String login;
+
+    @XmlElement
     private String password;
 
     public Credential() {
