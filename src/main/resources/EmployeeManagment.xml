@@ -3,75 +3,64 @@
     <department>
         <id>1</id>
         <name>Department 1</name>
+        <employees>
+            <employee>
+                <id>1</id>
+                <name>Bill Murray</name>
+                <position>Manager</position>
+                <contact>
+                    <id>1</id>
+                    <email>example@example.com</email>
+                    <phone>1234567890</phone>
+                </contact>
+                <credential>
+                    <id>1</id>
+                    <login>username</login>
+                    <password>password</password>
+                </credential>
+                <tasks>
+                    <task>
+                        <id>1</id>
+                        <name>Task 1</name>
+                        <priority>High</priority>
+                    </task>
+
+                    <task>
+                        <id>2</id>
+                        <name>Task 2</name>
+                        <priority>Medium</priority>
+                    </task>
+                </tasks>
+            </employee>
+            <employee>
+                <id>2</id>
+                <name>John Doe</name>
+                <position>Developer</position>
+                <contact>
+                    <id>2</id>
+                    <email>john@example.com</email>
+                    <phone>9876543210</phone>
+                </contact>
+                <credential>
+                    <id>2</id>
+                    <login>john_username</login>
+                    <password>john_password</password>
+                </credential>
+                <tasks>
+                    <task>
+                        <id>3</id>
+                        <name>Task 3</name>
+                        <priority>Low</priority>
+                    </task>
+                    <task>
+                        <id>4</id>
+                        <name>Task 4</name>
+                        <priority>Medium</priority>
+                    </task>
+                </tasks>
+            </employee>
+        </employees>
     </department>
 
-    <employee>
-        <id>1</id>
-        <name>Bill Murray</name>
-        <position>Manager</position>
-        <department_id>1</department_id>
-    </employee>
 
-    <employee>
-        <id>2</id>
-        <name>John Doe</name>
-        <position>Developer</position>
-        <department_id>1</department_id>
-    </employee>
-
-    <contact>
-        <id>1</id>
-        <email>example@example.com</email>
-        <phone>1234567890</phone>
-        <employee_id>1</employee_id>
-    </contact>
-
-    <contact>
-        <id>2</id>
-        <email>john@example.com</email>
-        <phone>9876543210</phone>
-        <employee_id>2</employee_id>
-    </contact>
-
-    <credential>
-        <id>1</id>
-        <login>username</login>
-        <password>password</password>
-        <employee_id>1</employee_id>
-    </credential>
-
-    <credential>
-        <id>2</id>
-        <login>john_username</login>
-        <password>john_password</password>
-        <employee_id>2</employee_id>
-    </credential>
-
-    <task>
-        <id>1</id>
-        <name>Task 1</name>
-        <priority>High</priority>
-        <employee_id>1</employee_id>
-    </task>
-
-    <task>
-        <id>2</id>
-        <name>Task 2</name>
-        <priority>Medium</priority>
-        <employee_id>1</employee_id>
-    </task>
-
-    <task>
-        <id>3</id>
-        <name>Task 3</name>
-        <priority>Low</priority>
-        <employee_id>2</employee_id>
-    </task>
-
-    <task>
-        <id>4</id>
-        <name>Task 4</name>
-        <priority>Medium</priority>
-        <employee_id>2</employee_id>
-    </task>
 </EmployeeManagement>
