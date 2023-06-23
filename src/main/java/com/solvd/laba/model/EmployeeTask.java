@@ -53,4 +53,13 @@ public class EmployeeTask {
     public int hashCode() {
         return Objects.hash(id, percentageCompleted, task);
     }
+
+    @Override
+    public String toString() {
+        return "EmployeeTask{" +
+                "id=" + id +
+                ", percentageCompleted=" + percentageCompleted +
+                ", task=" + task +
+                '}';
+    }
 }
