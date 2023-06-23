@@ -7,14 +7,10 @@ import javax.xml.bind.annotation.XmlElementWrapper;
 import java.util.List;
 import java.util.Objects;
 
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Department {
-    @XmlElement(name = "id")
+
     private Long id;
-    @XmlElement(name = "name")
     private String name;
-    @XmlElementWrapper(name = "employees")
-    @XmlElement(name = "employee")
     private List<Employee> employees;
 
     public Department() {

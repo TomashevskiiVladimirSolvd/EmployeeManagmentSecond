@@ -18,19 +18,6 @@
                     <login>username</login>
                     <password>password</password>
                 </credential>
-                <tasks>
-                    <task>
-                        <id>1</id>
-                        <name>Task 1</name>
-                        <priority>High</priority>
-                    </task>
-
-                    <task>
-                        <id>2</id>
-                        <name>Task 2</name>
-                        <priority>Medium</priority>
-                    </task>
-                </tasks>
             </employee>
             <employee>
                 <id>2</id>
@@ -46,18 +33,6 @@
                     <login>john_username</login>
                     <password>john_password</password>
                 </credential>
-                <tasks>
-                    <task>
-                        <id>3</id>
-                        <name>Task 3</name>
-                        <priority>Low</priority>
-                    </task>
-                    <task>
-                        <id>4</id>
-                        <name>Task 4</name>
-                        <priority>Medium</priority>
-                    </task>
-                </tasks>
             </employee>
         </employees>
     </department>

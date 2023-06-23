@@ -5,7 +5,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import java.util.List;
 import java.util.Objects;
 
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Employee {
     private Long id;
     private String name;
