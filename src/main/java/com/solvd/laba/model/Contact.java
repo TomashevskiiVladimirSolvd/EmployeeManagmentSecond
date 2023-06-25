@@ -1,5 +1,7 @@
 package com.solvd.laba.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -7,12 +9,13 @@ import java.util.Objects;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Contact {
+    @JsonProperty("id")
     @XmlElement
     private Long id;
-
+    @JsonProperty("email")
     @XmlElement
     private String email;
-
+    @JsonProperty("phone")
     @XmlElement
     private String phone;
 

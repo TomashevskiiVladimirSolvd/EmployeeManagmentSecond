@@ -1,3 +1,5 @@
+package com.solvd.laba.validator;
+
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
@@ -23,10 +25,4 @@ public class XMLValidator {
         return true;
     }
 
-    public static void main(String[] args) {
-        String xmlFilePath = "src/main/resources/EmployeeManagment.xml";
-        String xsdFilePath = "src/main/resources/EmployeeManagmentSchema.xsd";
-        boolean isValid = validateXMLAgainstXSD(xmlFilePath, xsdFilePath);
-        System.out.println("XML is valid: " + isValid);
-    }
 }

@@ -1,4 +1,4 @@
-
+package com.solvd.laba.parsers;
 
 import org.xml.sax.SAXException;
 
@@ -9,9 +9,9 @@ import java.io.File;
 import java.io.IOException;
 
 public class SaxParser {
-    public static void main(String[] args) {
+    public void parseSaxXML(String xmlFilePath) {
         try {
-            File xmlFile = new File("src/main/resources/EmployeeManagment.xml");
+            File xmlFile = new File(xmlFilePath);
 
             SAXParserFactory factory = SAXParserFactory.newInstance();
             SAXParser parser = factory.newSAXParser();
@@ -20,7 +20,7 @@ public class SaxParser {
             parser.parse(xmlFile, xmlHandler);
 
         } catch (SAXException | IOException | ParserConfigurationException e) {
-            e.printStackTrace();
+            System.out.println("Can't parse it");
         }
     }
 }

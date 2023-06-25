@@ -1,63 +1,36 @@
 {
-  "department": {
-    "id": 1,
-    "name": "Department 1",
-    "employees": [
-      {
+  "id": 1,
+  "name": "Department 1",
+  "employees": [
+    {
+      "id": 1,
+      "name": "Bill Murray",
+      "position": "Manager",
+      "contact": {
         "id": 1,
-        "name": "Bill Murray",
-        "position": "Manager",
-        "contact": {
-          "id": 1,
-          "email": "example@example.com",
-          "phone": "1234567890"
-        },
-        "credential": {
-          "id": 1,
-          "login": "username",
-          "password": "password"
-        },
-        "tasks": [
-          {
-            "id": 1,
-            "name": "Task 1",
-            "priority": "High"
-          },
-          {
-            "id": 2,
-            "name": "Task 2",
-            "priority": "Medium"
-          }
-        ]
+        "email": "example@example.com",
+        "phone": "1234567890"
       },
-      {
-        "id": 2,
-        "name": "John Doe",
-        "position": "Developer",
-        "contact": {
-          "id": 2,
-          "email": "john@example.com",
-          "phone": "9876543210"
-        },
-        "credential": {
-          "id": 2,
-          "login": "john_username",
-          "password": "john_password"
-        },
-        "tasks": [
-          {
-            "id": 3,
-            "name": "Task 3",
-            "priority": "Low"
-          },
-          {
-            "id": 4,
-            "name": "Task 4",
-            "priority": "Medium"
-          }
-        ]
+      "credential": {
+        "id": 1,
+        "login": "username",
+        "password": "password"
       }
-    ]
-  }
+    },
+    {
+      "id": 2,
+      "name": "John Doe",
+      "position": "Developer",
+      "contact": {
+        "id": 2,
+        "email": "john@example.com",
+        "phone": "9876543210"
+      },
+      "credential": {
+        "id": 2,
+        "login": "john_username",
+        "password": "john_password"
+      }
+    }
+  ]
 }
-

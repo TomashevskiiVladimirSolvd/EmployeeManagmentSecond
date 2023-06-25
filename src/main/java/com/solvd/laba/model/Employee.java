@@ -1,5 +1,7 @@
 package com.solvd.laba.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -8,18 +10,19 @@ import java.util.Objects;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Employee {
+    @JsonProperty("id")
     @XmlElement
     private Long id;
-
+    @JsonProperty("name")
     @XmlElement
     private String name;
-
+    @JsonProperty("position")
     @XmlElement
     private String position;
-
+    @JsonProperty("contact")
     @XmlElement
     private Contact contact;
-
+    @JsonProperty("credential")
     @XmlElement
     private Credential credential;
     private List<EmployeeSkill> skills;

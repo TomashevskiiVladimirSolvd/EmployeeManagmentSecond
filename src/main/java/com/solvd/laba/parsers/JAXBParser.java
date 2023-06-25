@@ -1,3 +1,5 @@
+package com.solvd.laba.parsers;
+
 import com.solvd.laba.model.Contact;
 import com.solvd.laba.model.Credential;
 import com.solvd.laba.model.Department;
@@ -10,12 +12,12 @@ import java.io.File;
 import java.util.List;
 
 public class JAXBParser {
-    public static void main(String[] args) {
+    public void parseXML(String xmlFilePath) {
         try {
             JAXBContext jaxbContext = JAXBContext.newInstance(Department.class);
             Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
 
-            File xmlFile = new File("src/main/resources/EmployeeManagment.xml");
+            File xmlFile = new File(xmlFilePath);
 
             Department department = (Department) unmarshaller.unmarshal(xmlFile);
 
@@ -40,11 +42,10 @@ public class JAXBParser {
                 System.out.println("Credential ID: " + credential.getId());
                 System.out.println("Credential Login: " + credential.getLogin());
                 System.out.println("Credential Password: " + credential.getPassword());
-                System.out.println("--------");
-                System.out.println("--------");
+                System.out.println("++++++");
             }
         } catch (JAXBException e) {
-            e.printStackTrace();
+            System.out.println("Can't parse it");
         }
     }
 }
